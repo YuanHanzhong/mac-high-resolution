@@ -1,0 +1,33 @@
+SIP 全称为「System Integrity Protection」即「系统完整性保护」，是 OS X El Capitan 时开始采用的一项安全技术，SIP 将一些文件目录和系统应用保护了起来。但这会影响我们一些使用或设置，比如：更改系统应用图标、终端操作系统目录文件提示「Operation not permitted」、Finder 无法编辑系统目录里的文件。
+
+关闭 SIP
+因为 SIP 是系统级的权限操作，我们无法直接关闭它，需要前往「macOS 恢复功能」下进行。
+将 Mac 开机，立即在键盘上按住 Command ⌘ + R，直到看到 Apple 标志或旋转的地球时松开。看到「实用工具」窗口时，恢复功能启动即完成。
+
+
+在上方的菜单栏点击「实用工具」选择「终端」。
+
+
+在终端中，输入「csrutil disable」后回车。
+
+
+回车后会提示「成功关闭了系统完整性保护，请重启机器」
+回车后会提示「成功关闭了系统完整性保护，请重启机器」
+点击菜单栏  标志，选择「重新启动」。
+
+
+就此我们关闭了 SIP。
+
+打开 SIP
+SIP 是避免软件任意修改或覆盖任意系统文件或应用，日常还是建议保持开启状态的。
+仍然是进入到「macOS 恢复功能」，但这次在终端输入的是「csrutil enable」开启 SIP，重启 Mac 即可。
+
+
+和之前不同，这次输入的是「csrutil enable」
+和之前不同，这次输入的是「csrutil enable」
+查看 SIP 当前状态
+在正常系统打开「终端」，输入「csrutil status」后回车。
+
+
+enabled 为开启，disabled 为关闭
+enabled 为开启，disabled 为关闭
