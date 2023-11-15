@@ -1,5 +1,8 @@
 # Enable macOS HiDPI
 
+## Note
+解决重启后分辨率恢复的问题，参考 https://sspai.com/post/55066 ，关闭系统保护 csrutil disable
+
 ## Explanation
 
 [English](README.md) | [中文](README-zh.md)
